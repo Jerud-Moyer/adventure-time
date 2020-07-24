@@ -6,7 +6,7 @@ const user = getUser();
 if (user.hp <= 0) {
     alert('YOU DIED! HAHAHAHAHA!');
     alert(`you had ${user.gold} gold left on your lifeless body`);
-    window.location('../index.html');
+    window.location = '/results';
 }
 
 
@@ -24,16 +24,17 @@ for (let i =0; i < quests.length; i++) {
 }
 
 if (completedQuests === quests.length) {
-    alert(`You have survived the gauntelet of quests! You are champion and retire from questing with ${user.gold} gold!`)
+    alert(`You have survived the gauntelet of quests! You are champion and retire from questing with ${user.gold} gold!`);
+    window.location = '/results';
 }
 
 for (let i = 0; i < quests.length; i++) {
     const quest = quests[i];
-
+    
     /*const a = document.createElement('a');
     a.textContent = quest.title;
     a.href = '/quest/?id=' + quest.id;*/
-
+    
     if (user.completed[quest.id]) {
         const span = document.createElement('span');
         span.textContent = quest.title;
@@ -45,6 +46,6 @@ for (let i = 0; i < quests.length; i++) {
         a.href = '/quest/?id=' + quest.id;
         section.append(a);
     }
-    }
+}
 
     

@@ -41,7 +41,7 @@ export function renderSection(quest) {
         const choiceId = formData.get('choices');
         const results = findById(quest.choices, choiceId);
         const user = getUser();
-console.log(user, results);
+
         user.gold += results.gold;
         user.hp += results.hp;
         user.completed[quest.id] = true;

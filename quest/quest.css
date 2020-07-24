@@ -1,0 +1,38 @@
+main {
+    height: 100em;
+    background-size: 100%;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    color: tomato;
+    font-size: 30px;
+    text-shadow: darkslategray 1px 1px;
+    padding: 50px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    color: tomato;
+    font-size: 24px;
+    text-shadow: darkslategray 1px 1px;
+}
+
+#result {
+    justify-content: center;
+    align-items: center;
+}
+
+#proceed {
+    justify-content: center;
+    align-items: center;
+}
