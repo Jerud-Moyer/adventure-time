@@ -1,0 +1,23 @@
+main {
+    height: 100em;
+    background-size: 100%;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+a {
+    margin: 30px;
+    color: tomato;
+    font-size: 50px;
+    text-shadow: whitesmoke  1px 1px;
+    
+}
